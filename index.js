@@ -1,16 +1,17 @@
 const express = require('express');
+const router  = require('./routes/route');
   
 const app = express();
 const PORT = 8011;
-  
-app.get('/', (req, res)=>{
-    res.status(200);
-    res.send("This is from root tufiiiiii rehmannnnnnnnnnnnnnnnnnnnnnnn");
-});
-app.get('/u', (req, res)=>{
-    res.status(200);
-    res.send("This is from root tufiiiiiiioioioioiio");
-});
+app.use('/',router);
+// app.get('/', (req, res)=>{
+//     res.status(200);
+//     res.send("This is from root tufiiiiii rehmannnnnnnnnnnnnnnnnnnnnnnn");
+// });
+// app.get('/u', (req, res)=>{
+//     res.status(200);
+//     res.send("This is from root tufiiiiiiioioioioiio");
+// });
 
   
 app.listen(PORT, (error) =>{
