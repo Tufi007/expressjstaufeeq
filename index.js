@@ -7,6 +7,10 @@ app.get('/', (req, res)=>{
     res.status(200);
     res.send("This is from root tufiiiiii rehmannnnnnnnnnnnnnnnnnnnnnnn");
 });
+app.get('/u', (req, res)=>{
+    res.status(200);
+    res.send("This is from root tufiiiiiiioioioioiio");
+});
 
   
 app.listen(PORT, (error) =>{
