@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const PORT = 8011;
   
-app.get('/user', (req, res)=>{
+app.get('/', (req, res)=>{
     res.status(200);
     res.send("This is from root tufiiiiii rehmannnnnnnnnnnnnnnnnnnnnnnn");
 });
