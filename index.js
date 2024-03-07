@@ -4,7 +4,7 @@ const router  = require('./routes/route');
 const app=require("./app");
 const PORT = 8011;
 app.use('/',router);
-
+app.use('/a',router)
 app.listen(PORT, (error) =>{
     if(!error)
         console.log("Server is Successfully Running and App is listening on port " + PORT);
